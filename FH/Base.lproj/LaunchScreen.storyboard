@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+            <string>OpenSans-Light</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -15,8 +23,59 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Willkommen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8P-na-GXM">
+                                <rect key="frame" x="20" y="328" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="aHM-2P-fih"/>
+                                    <constraint firstAttribute="height" constant="30" id="nWG-iX-tgj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fh_neubau_f4.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xa8-rT-V6m">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="620-Yl-njn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="an der FH Bielefeld !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9s-jy-b3B">
+                                <rect key="frame" x="20" y="366" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="joS-6w-2In"/>
+                                    <constraint firstAttribute="width" constant="560" id="kta-v5-3Vg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayLauch.png" translatesAutoresizingMaskIntoConstraints="NO" id="UBC-Nm-GEI">
+                                <rect key="frame" x="145" y="445" width="170" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="2L7-nY-QMH"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="155" id="Ktw-AA-u1Z"/>
+                                    <constraint firstAttribute="height" constant="162" id="W7j-4V-vAN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V9s-jy-b3B" firstAttribute="top" secondItem="R8P-na-GXM" secondAttribute="bottom" constant="8" id="0An-ZY-qe1"/>
+                            <constraint firstItem="Xa8-rT-V6m" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="51Q-QV-g7f"/>
+                            <constraint firstItem="UBC-Nm-GEI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="125" id="70i-td-YJU"/>
+                            <constraint firstItem="Xa8-rT-V6m" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="CUW-aU-4sv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xa8-rT-V6m" secondAttribute="trailing" constant="-20" id="F0c-WO-ge7"/>
+                            <constraint firstItem="R8P-na-GXM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="M5J-6s-2oS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R8P-na-GXM" secondAttribute="trailing" id="S0e-rQ-2CS"/>
+                            <constraint firstItem="R8P-na-GXM" firstAttribute="top" secondItem="Xa8-rT-V6m" secondAttribute="bottom" constant="8" id="YNb-8R-yN3"/>
+                            <constraint firstItem="V9s-jy-b3B" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="Z1J-ca-LVT"/>
+                            <constraint firstItem="UBC-Nm-GEI" firstAttribute="top" secondItem="R8P-na-GXM" secondAttribute="bottom" constant="87" id="c1U-7d-Cbx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UBC-Nm-GEI" secondAttribute="trailing" constant="265" id="ddK-Yp-JBy"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="UBC-Nm-GEI" secondAttribute="bottom" constant="-7" id="wZ7-Kg-cJk"/>
+                            <constraint firstItem="UBC-Nm-GEI" firstAttribute="top" secondItem="V9s-jy-b3B" secondAttribute="bottom" constant="58" id="y5d-pn-t4z"/>
+                            <constraint firstItem="V9s-jy-b3B" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="yEH-mP-y2O"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +83,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fh_neubau_f4.png" width="680" height="320"/>
+        <image name="grayLauch.png" width="170" height="170"/>
+    </resources>
 </document>

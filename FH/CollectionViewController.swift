@@ -77,6 +77,9 @@ class CollectionViewController: UICollectionViewController {
         let img = UIImage(named: color)
         cell.imageDisplay.image = img
         cell.layer.borderWidth = 0
+        cell.layer.shadowColor = UIColor.grayColor().CGColor
+        cell.layer.shadowOpacity = 0.8
+        cell.layer.shadowOffset = CGSize(width: 3, height: 3)
         
         
         if pics[indexPath.row] == theme.colorString {

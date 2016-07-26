@@ -23,15 +23,15 @@ class MemoryViewController: UIViewController {
     var date:String!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.textLabel.text = text
-        self.dateLabel.text = "Erstellt am: " + date
-        
         textLabel.numberOfLines = 0
         textLabel.adjustsFontSizeToFitWidth = true
         textLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
         
+        super.viewDidLoad()
+        self.textLabel.text = text
+        self.dateLabel.text = "Erstellt am: " + date
         
+
         navigationItem.backBarButtonItem?.title = " "
         
     }

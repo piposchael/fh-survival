@@ -53,11 +53,6 @@ class InfoPagerController: UIViewController, UIPageViewControllerDataSource {
         
         let vc: WebViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebViewPager") as! WebViewController
         
-        /*vc.titlevar = pages[index].title
-        vc.text = pages[index].text
-        vc.image = pages[index].image*/
-        
-        
         
         vc.pageIndex = index
         vc.htmlName = pages[index]

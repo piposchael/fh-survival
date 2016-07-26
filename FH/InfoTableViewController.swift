@@ -88,8 +88,6 @@ class InfoTableViewController: UITableViewController {
 
         // Configure the cell...
         
-        //cell.infoLabel.text = pages[indexPath.row]
-        
         cell.infoLabel.text = createTitleForCell(pages[indexPath.row])
 
         return cell

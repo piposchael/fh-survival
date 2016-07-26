@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		653F9EE81D269B1A00526DA3 /* InfoPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F9EE71D269B1A00526DA3 /* InfoPagerView.swift */; };
 		653F9EEA1D269B3600526DA3 /* InfoPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F9EE91D269B3600526DA3 /* InfoPagerController.swift */; };
 		6554B4C11D33CDFA00E1460B /* ordnung.html in Resources */ = {isa = PBXBuildFile; fileRef = 6554B4C01D33CDFA00E1460B /* ordnung.html */; };
 		6554B4C31D33CE6C00E1460B /* learngroups.html in Resources */ = {isa = PBXBuildFile; fileRef = 6554B4C21D33CE6C00E1460B /* learngroups.html */; };
@@ -89,7 +88,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		653F9EE71D269B1A00526DA3 /* InfoPagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPagerView.swift; sourceTree = "<group>"; };
 		653F9EE91D269B3600526DA3 /* InfoPagerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPagerController.swift; sourceTree = "<group>"; };
 		6554B4C01D33CDFA00E1460B /* ordnung.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ordnung.html; sourceTree = "<group>"; };
 		6554B4C21D33CE6C00E1460B /* learngroups.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = learngroups.html; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 		653F9EE61D269AF300526DA3 /* TippsPager */ = {
 			isa = PBXGroup;
 			children = (
-				653F9EE71D269B1A00526DA3 /* InfoPagerView.swift */,
 				653F9EE91D269B3600526DA3 /* InfoPagerController.swift */,
 				65C1FD9C1D2BC99A009BABAC /* WebViewController.swift */,
 			);
@@ -562,7 +559,6 @@
 				65C419511D43C76E00A7453C /* CollectionViewController.swift in Sources */,
 				65FB081B1D43A2B0003315D7 /* NavigationSettingController.swift in Sources */,
 				65A16C161D23EE3E00A5F0D9 /* Memory.swift in Sources */,
-				653F9EE81D269B1A00526DA3 /* InfoPagerView.swift in Sources */,
 				65C1FDA91D2C0887009BABAC /* TableWebViewController.swift in Sources */,
 				65FB08171D438F2B003315D7 /* ThemeSettings.swift in Sources */,
 				65A16BE41D23EE0800A5F0D9 /* AppDelegate.swift in Sources */,

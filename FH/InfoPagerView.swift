@@ -34,8 +34,6 @@ class InfoPagerView: UIViewController {
         
         self.imageView.image = image
         
-        let lightgreen = UIColor(red: 207/255, green: 213/255, blue: 143/255, alpha: 1.0)
-        self.imageView.backgroundColor = lightgreen
     }
 
 }

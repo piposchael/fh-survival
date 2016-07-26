@@ -77,15 +77,12 @@ class CollectionViewController: UICollectionViewController {
         let img = UIImage(named: color)
         cell.imageDisplay.image = img
         cell.layer.borderWidth = 0
-        //cell.backgroundColor = theme.activeColor[1]
-        //collView.backgroundColor = theme.activeColor[1]
         
         
         if pics[indexPath.row] == theme.colorString {
             cell.layer.cornerRadius = 5
             cell.layer.borderWidth = 1.0
             cell.layer.borderColor = UIColor.grayColor().CGColor
-            //cell.backgroundColor = UIColor.grayColor()
         }
         
         return cell
@@ -165,10 +162,6 @@ class CollectionViewController: UICollectionViewController {
         
         let pagecon = UIPageControl.appearance()
         pagecon.backgroundColor = theme.activeColor[1]
-        
-        let collView = UICollectionView.appearance()
-        collView.backgroundColor = theme.activeColor[1]
-        
         
     }
 
